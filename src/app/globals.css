@@ -2,3 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  header {
+    @apply flex items-center justify-between h-28
+  }
+  nav {
+    @apply flex justify-around bg-white border-none p-2
+  }
+
+}
+
+@layer components {
+  .btn-login {
+    @apply border-2 rounded-lg border-blue-500  text-blue-500 shadow-sm p-2 px-8 m-5 hover:bg-blue-500 hover:text-white transition-all 
+  }
+  .link-cabecalho {
+    @apply flex justify-end mx-10 p-2 hover:bg-blue-500 transition-all duration-500 ease-out rounded font-bold
+  }
+  
+}
+
