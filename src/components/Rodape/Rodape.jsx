@@ -10,7 +10,7 @@ export default function Rodape() {
         <div className='flex flex-col justify-center p-8 text-white font-bold'>
            <p>Nossas redes sociais</p>
            <div className='flex flex-wrap justify-between items-center pt-4'>
-              <a href="#">
+              <a href="https://web.facebook.com/porto/?locale=pt_BR&_rdc=1&_rdr">
                 <Image
                 src='/img/facebook-logo.png'
                 alt='Facebook Logo'
@@ -20,7 +20,7 @@ export default function Rodape() {
                 />
               </a>
               
-              <a href="#">
+              <a href="https://www.instagram.com/portoseguro/">
                 <Image
                   src='/img/instagram-logo.png'             
                   alt='Instagram Logo'
@@ -29,7 +29,7 @@ export default function Rodape() {
                 />
               </a>
 
-              <a href="#">
+              <a href="https://twitter.com/portoseguro?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
                 <Image
                 src='/img/twitter-logo.png'
                 alt='Twitter Logo'

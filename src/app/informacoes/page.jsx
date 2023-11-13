@@ -17,7 +17,14 @@ export default function MaisInfo() {
             Pedal Essencial:
           </h4>
           <p className=" mb-4">
-           
+          O Plano de Serviço Pedal Essencial abrange uma variedade de
+            assistências essenciais para os ciclistas. Isso inclui desde o
+            reparo de câmaras de ar e correntes, até a substituição ou regulagem
+            de componentes fundamentais como selim, canote, manetes de freios,
+            cabos e freios dianteiros e traseiros. É um plano abrangente que
+            visa garantir que sua bicicleta esteja sempre pronta para qualquer
+            aventura, cobrindo desde pequenos reparos até ajustes vitais para um
+            passeio seguro e tranquilo.
           </p>
           <h4 className=" text-xl md:text-2xl font-semibold mb-2 text-cyan-700">
             Pedal Leve:
