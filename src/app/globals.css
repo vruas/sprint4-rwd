@@ -11,10 +11,10 @@
 
 @layer components {
   .btn-login-cabecalho {
-    @apply border-2 rounded-lg border-blue-500  text-blue-500 shadow-sm p-2 px-8 m-5 hover:bg-blue-500 hover:text-white transition-all 
+    @apply border-4 rounded-lg border-cyan-500  text-cyan-500 shadow-sm p-2 px-8 m-5 hover:bg-cyan-500 hover:text-white transition-all 
   }
   .link-cabecalho {
-    @apply flex justify-end mx-10 p-2 hover:bg-blue-500 transition-all duration-500 ease-out rounded font-bold
+    @apply flex justify-end mx-10 p-2 hover:bg-cyan-500 transition-all duration-500 ease-out rounded font-bold
   }
 
   .section-sobre {
@@ -48,7 +48,7 @@
     
   }
     & h2 {
-      color:rgba(255, 255, 255, 0.908);
+      color:rgb(82, 79, 79);
       font-size: 35px;
       font-weight: 700;
       margin-bottom: 12px;
@@ -76,7 +76,7 @@
     flex-direction: column;
     border-style: solid;
     border-width: 4px;
-    border-color: rgb(59 130 246);
+    border-color: rgb(66, 210, 247);
     width: 230px;
     height: 330px;
     border-radius: 15px;

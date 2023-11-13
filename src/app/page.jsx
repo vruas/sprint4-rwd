@@ -10,7 +10,7 @@ export default function Home() {
 					<div>
 						<h2>Sobre o projeto</h2>
 						<p className='section-txt'>
-							Nosso projeto consiste em um sistema que possa fazer uma vistoria online, assim podendo expandir a quantidade de clientes que podem ter um seguro para sua bicicleta. Os beneficios que o nosso projeto tras tanto para a empresa quanto para o usuario são: Diminuição no custo da vistoria assim diminuindo o preço dos pacotes, aumentar a quantidade de pessoas que podem ter acesso á um seguro de bicicleta, diminuir o tempo para a resposta da vistoria e a vistoria pode ser feita atraves de um celular sem precisar ir para algum lugar ou necessitar de um funcionario.	
+						Nosso sistema de vistoria online para seguros de bicicleta é uma inovação que traz benefícios significativos para empresas e usuários. Reduz custos operacionais, permitindo preços mais acessíveis, amplia o acesso ao seguro para mais pessoas, oferece respostas rápidas de vistoria e a conveniência de poder realizar a vistoria pelo celular, eliminando a necessidade de deslocamento. Esta abordagem eficiente e ágil democratiza o acesso ao seguro, simplificando o processo de obtenção do serviço tanto para a empresa quanto para os usuários.
 						</p>
 					</div>
 				</div>
@@ -28,8 +28,8 @@ export default function Home() {
 					width={128}
 					height={128}
 					/>
-					<p className='mb-5 font-semibold text-blue-500'>Gabriel Previ</p>
-					<p className='mb-5 font-semibold text-blue-500'>RM: 98774</p>
+					<p className='mb-5 font-semibold text-cyan-500'>Gabriel Previ</p>
+					<p className='mb-5 font-semibold text-cyan-500'>RM: 98774</p>
 				</article>
 				<article className='card-integrante'>
 					<Image className='card-img'
@@ -38,8 +38,8 @@ export default function Home() {
 					width={128}
 					height={128}
 					/>
-					<p className='mb-5 font-semibold text-blue-500'>Lucas Mendonça</p>
-					<p className='mb-5 font-semibold text-blue-500'>RM: 99528</p>
+					<p className='mb-5 font-semibold text-cyan-500'>Lucas Mendonça</p>
+					<p className='mb-5 font-semibold text-cyan-500'>RM: 99528</p>
 				</article>
 				<article className='card-integrante'>
 					<Image className='card-img'
@@ -48,8 +48,8 @@ export default function Home() {
 					width={128}
 					height={128}
 					/>
-					<p className='mb-5 font-semibold text-blue-500'>Otavio Porto</p>
-					<p className='mb-5 font-semibold text-blue-500'>RM: 550715</p>
+					<p className='mb-5 font-semibold text-cyan-500'>Otavio Porto</p>
+					<p className='mb-5 font-semibold text-cyan-500'>RM: 550715</p>
 				</article>
 				<article className='card-integrante'>
 					<Image className='card-img'
@@ -58,8 +58,8 @@ export default function Home() {
 					width={128}
 					height={128}
 					/>
-					<p className='mb-5 font-semibold text-blue-500'>Vitor Ruas</p>
-					<p className='mb-5 font-semibold text-blue-500'>RM: 550871</p>
+					<p className='mb-5 font-semibold text-cyan-500'>Vitor Ruas</p>
+					<p className='mb-5 font-semibold text-cyan-500'>RM: 550871</p>
 				</article>
 			</div>
 		</section>

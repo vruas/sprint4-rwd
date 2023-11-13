@@ -27,7 +27,7 @@ export default function Cabecalho() {
           <Link class="link-cabecalho" href="/vistoria">
             Vistoria
           </Link>
-          <Link class="link-cabecalho" href="/minha-garagem">
+          <Link class="link-cabecalho" href="/api/garagem">
             Minha Garagem
           </Link>
           <Link class="link-cabecalho" href="/informacoes">
