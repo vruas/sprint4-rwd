@@ -27,9 +27,17 @@ export default function MaisInfo() {
             passeio seguro e tranquilo.
           </p>
           <h4 className=" text-xl md:text-2xl font-semibold mb-2 text-cyan-700">
-            Pedal Leve:
+            Pedal Leve: 
           </h4>
           <p className=" mb-4">
+          O Plano de Serviço Pedal Leve oferece uma gama de assistências
+            cruciais para ciclistas, cobrindo desde reparos básicos até garantir
+            o bem-estar do ciclista. Isso inclui reparos ou substituições de
+            câmaras de ar e correntes, ajustes ou trocas do selim e do canote, a
+            regulagem e troca de manetes de freios e cabos, além da regulagem
+            dos freios dianteiro e traseiro. É um pacote abrangente que atende
+            desde a manutenção rotineira até a assistência essencial em
+            situações imprevistas.
             
           </p>
           <h4 className=" text-xl md:text-2xl font-semibold mb-2 text-cyan-700">
