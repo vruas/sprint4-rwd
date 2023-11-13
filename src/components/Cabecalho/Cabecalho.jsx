@@ -1,34 +1,40 @@
-import React from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
+import React from "react";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function Cabecalho() {
   return (
     <>
-       <header>
-    <div class="flex items-center">
-        <div>
-            <Image
+      <header className="bg-transparent flex justify-between items-center h-28">
+        <div className="flex items-center">
+          <div>
+            <Link href="/">
+              <Image
                 src="/img/porto-seguro-logo.png"
                 alt="Logo da Porto"
                 width={200}
                 height={70}
-            />
+              />
+            </Link>
+          </div>
+
+          <a href="/cliente/login">
+            <button class="btn-login-cabecalho">Entrar</button>
+          </a>
         </div>
 
-        <a href="/login">
-            <button class="btn-login">Entrar</button>
-        </a>
-    </div>
-
-    <nav>
-        <Link class="link-cabecalho" href="/sobre">Sobre Nós</Link>
-        <Link class="link-cabecalho" href="/vistoria">Vistoria</Link>
-        <Link class="link-cabecalho" href="/minha-garagem">Minha Garagem</Link>
-        <Link class="link-cabecalho" href="/informacoes">Mais Informações</Link>
-    </nav>
-</header>
-
+        <nav className="flex flex-row justify-around">
+          <Link class="link-cabecalho" href="/vistoria">
+            Vistoria
+          </Link>
+          <Link class="link-cabecalho" href="/minha-garagem">
+            Minha Garagem
+          </Link>
+          <Link class="link-cabecalho" href="/informacoes">
+            Mais Informações
+          </Link>
+        </nav>
+      </header>
     </>
   );
 }
