@@ -1,29 +1,29 @@
 {
-    "Bikes": [
-      {"Marca": "Caloi", "Preco": "R$ 1.649,99", "Modelo": "400 F", "Modalidade": "Urbana"},
-      {"Marca": "Caloi", "Preco": "R$ 1.649,99", "Modelo": "400 M", "Modalidade": "Urbana"},
-      {"Marca": "Caloi", "Preco": "R$ 2.169,99", "Modelo": "700", "Modalidade": "Urbana"},
-      {"Marca": "Caloi", "Preco": "R$ 2.199,99", "Modelo": "Rainbow", "Modalidade": "Urbana"},
+    "bikes": [
+      {"marca": "Caloi", "preco": "R$ 1.649,99", "modelo": "400 F", "modalidade": "Urbana"},
+      {"marca": "Caloi", "preco": "R$ 1.649,99", "modelo": "400 M", "modalidade": "Urbana"},
+      {"marca": "Caloi", "preco": "R$ 2.169,99", "modelo": "700", "modalidade": "Urbana"},
+      {"marca": "Caloi", "preco": "R$ 2.199,99", "modelo": "Rainbow", "modalidade": "Urbana"},
       
-      {"Marca": "Sense", "Preco": "R$ 99.990,00", "Modelo": "Exalt E-Trail Black Edition", "Modalidade": "Montanha"},
-      {"Marca": "Sense", "Preco": "R$ 65.990,00", "Modelo": "Invictus Carbon Factory Team 2023", "Modalidade": "Montanha"},
-      {"Marca": "Sense", "Preco": "R$ 89.990,00", "Modelo": "Exalt E-Trail Factory 2023", "Modalidade": "Montanha"},
-      {"Marca": "Sense", "Preco": "R$ 62.990,00", "Modelo": "Exalt E-Trail Evo 2023", "Modalidade": "Montanha"},
+      {"marca": "Sense", "preco": "R$ 99.990,00", "modelo": "Exalt E-Trail Black Edition", "modalidade": "Montanha"},
+      {"marca": "Sense", "preco": "R$ 65.990,00", "modelo": "Invictus Carbon Factory Team 2023", "modalidade": "Montanha"},
+      {"marca": "Sense", "preco": "R$ 89.990,00", "modelo": "Exalt E-Trail Factory 2023", "modalidade": "Montanha"},
+      {"marca": "Sense", "preco": "R$ 62.990,00", "modelo": "Exalt E-Trail Evo 2023", "modalidade": "Montanha"},
       
-      {"Marca": "Oggi", "Preco": "R$ 17.890,00", "Modelo": "Cadenza 500 Disc 2021", "Modalidade": "Speed"},
-      {"Marca": "Oggi", "Preco": "R$ 9.890,00", "Modelo": "Stimolla Disc 2021", "Modalidade": "Speed"},
-      {"Marca": "Oggi", "Preco": "R$ 21.990,00", "Modelo": "Cadenza 700", "Modalidade": "Speed"},
-      {"Marca": "Oggi", "Preco": "R$ 5.390,00", "Modelo": "Veloce Disc 2022", "Modalidade": "Speed"},
+      {"marca": "Oggi", "preco": "R$ 17.890,00", "modelo": "Cadenza 500 Disc 2021", "modalidade": "Speed"},
+      {"marca": "Oggi", "preco": "R$ 9.890,00", "modelo": "Stimolla Disc 2021", "modalidade": "Speed"},
+      {"marca": "Oggi", "preco": "R$ 21.990,00", "modelo": "Cadenza 700", "modalidade": "Speed"},
+      {"marca": "Oggi", "preco": "R$ 5.390,00", "modelo": "Veloce Disc 2022", "modalidade": "Speed"},
       
-      {"Marca": "Soul Cycles", "Preco": "R$ 100.000,00", "Modelo": "3R5 Kronos Red Axs", "Modalidade": "Road"},
-      {"Marca": "Soul Cycles", "Preco": "R$ 100.000,00", "Modelo": "3R5 Kairos Red Axs", "Modalidade": "Road"},
-      {"Marca": "Soul Cycles", "Preco": "R$ 59.990,00", "Modelo": "3R5 Kronos Red Axs", "Modalidade": "Road"},
-      {"Marca": "Soul Cycles", "Preco": "R$ 49.990,00", "Modelo": "3R5 Kronos Force Axs", "Modalidade": "Road"},
+      {"marca": "Soul Cycles", "preco": "R$ 100.000,00", "modelo": "3R5 Kronos Red Axs", "modalidade": "Road"},
+      {"marca": "Soul Cycles", "preco": "R$ 100.000,00", "modelo": "3R5 Kairos Red Axs", "modalidade": "Road"},
+      {"marca": "Soul Cycles", "preco": "R$ 59.990,00", "modelo": "3R5 Kronos Red Axs", "modalidade": "Road"},
+      {"marca": "Soul Cycles", "preco": "R$ 49.990,00", "modelo": "3R5 Kronos Force Axs", "modalidade": "Road"},
       
-      {"Marca": "Cannondale", "Preco": "R$ 14.999,00", "Modelo": "Topstone 2", "Modalidade": "Gravel"},
-      {"Marca": "Cannondale", "Preco": "R$ 11.999,00", "Modelo": "Topstone 3", "Modalidade": "Gravel"},
-      {"Marca": "Cannondale", "Preco": "R$ 28.899,00", "Modelo": "Topstone Carbon 4", "Modalidade": "Gravel"},
-      {"Marca": "Cannondale", "Preco": "R$ 25.699,00", "Modelo": "Topstone Carbon 5", "Modalidade": "Gravel"}
+      {"marca": "Cannondale", "preco": "R$ 14.999,00", "modelo": "Topstone 2", "modalidade": "Gravel"},
+      {"marca": "Cannondale", "preco": "R$ 11.999,00", "modelo": "Topstone 3", "modalidade": "Gravel"},
+      {"marca": "Cannondale", "preco": "R$ 28.899,00", "modelo": "Topstone Carbon 4", "modalidade": "Gravel"},
+      {"marca": "Cannondale", "preco": "R$ 25.699,00", "modelo": "Topstone Carbon 5", "modalidade": "Gravel"}
     ]
   }
   
