@@ -51,11 +51,11 @@ export default function Cadastro() {
         <fieldset>
           <legend className="text-xl font-bold mb-3 text-center">Cadastro</legend>
           <div>
-            <label className="block text-sm text-lg font-bold mb-2" htmlFor="idNome">
+            <label className="block text-sm font-bold mb-2" htmlFor="idNome">
               Nome:
             </label>
             <input
-              className="w-full border border-2 border-cyan-500 rounded-md py-2 px-3"
+              className="w-full  border-2 border-cyan-500 rounded-md py-2 px-3"
               type="text"
               name="nome"
               id="idNome"
@@ -65,11 +65,11 @@ export default function Cadastro() {
             />
           </div>
           <div className="mb-4">
-            <label className="block text-sm text-lg font-bold mb-2" htmlFor="idNovoEmail">
+            <label className="block text-sm font-bold mb-2" htmlFor="idNovoEmail">
               Email:
             </label>
             <input
-              className="w-full border border-2 border-cyan-500 rounded-md py-2 px-3"
+              className="w-full border-2 border-cyan-500 rounded-md py-2 px-3"
               type="email"
               name="email"
               id="idEmail"
@@ -79,7 +79,7 @@ export default function Cadastro() {
             />
           </div>
           <div>
-            <label className="block text-sm text-lg font-bold mb-2" htmlFor="idNovaSenha">
+            <label className="block text-sm  font-bold mb-2" htmlFor="idNovaSenha">
               Senha:
             </label>
             <input

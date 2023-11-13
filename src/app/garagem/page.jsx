@@ -1,23 +1,19 @@
-
 import { redirect } from "next/navigation";
 
-export default async function UsersView() {
+export default async function Garagem() {
+    let bikes = [];
 
-    let items;
-
-    try{
-        const response = await fetch('http://localhost:3000/api/garagem');
-        items = await response.json();
-        
-    }catch(error){
+    try {
+        const response = await fetch('http://localhost:3000/dados/bikes/0');
+        bikes = await response.json();
+    } catch (error) {
         console.log(error);
         redirect('/error');
     }
 
-    return(
+    return (
         <div>
             <h1>Garagem</h1>
-
             <div>
                 <table>
                     <thead>
@@ -29,20 +25,17 @@ export default async function UsersView() {
                         </tr>
                     </thead>
                     <tbody>
-                        {items.map((item)=> (
-                            <tr key={item.id}>
-                                <td>{item.marca}</td>
-                                <td>{item.preco}</td>
-                                <td>{item.modelo}</td>
-                                <td>{item.modalidade}</td>
+                        {bikes.map((bike, index) => (
+                            <tr key={index}>
+                                <td>{bike.marca}</td>
+                                <td>{bike.preco}</td>
+                                <td>{bike.modelo}</td>
+                                <td>{bike.modalidade}</td>
                             </tr>
                         ))}
                     </tbody>
                 </table>
             </div>
-
         </div>
-
     );
-
-  }
+}
