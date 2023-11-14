@@ -1,8 +1,16 @@
 import React from "react";
+import Link from "next/link";
 
 export default function MaisInfo() {
   return (
-    <div className="bg-gradient-to-b from-neutral-200 to-neutral-400 p-4 md:p-8">
+    <div className="bg-gradient-to-b from-blue-100 to-blue-300 p-4 md:p-8">
+      <div className="mt-8 mb-8 flex justify-start">
+        <Link href="/">
+          <button className="bg-cyan-500 text-white py-2 px-4 rounded-md hover:bg-cyan-700 transition-all duration-500 ease-out">
+            Voltar
+          </button>
+        </Link>
+      </div>
       <div>
         <div className=" border-4 border-black rounded-lg p-4 md:p-8 mb-4">
           <h1 className=" text-2xl md:text-3xl font-bold mb-4 text-cyan-900">
@@ -17,7 +25,7 @@ export default function MaisInfo() {
             Pedal Essencial:
           </h4>
           <p className=" mb-4">
-          O Plano de Serviço Pedal Essencial abrange uma variedade de
+            O Plano de Serviço Pedal Essencial abrange uma variedade de
             assistências essenciais para os ciclistas. Isso inclui desde o
             reparo de câmaras de ar e correntes, até a substituição ou regulagem
             de componentes fundamentais como selim, canote, manetes de freios,
@@ -27,10 +35,10 @@ export default function MaisInfo() {
             passeio seguro e tranquilo.
           </p>
           <h4 className=" text-xl md:text-2xl font-semibold mb-2 text-cyan-700">
-            Pedal Leve: 
+            Pedal Leve:
           </h4>
           <p className=" mb-4">
-          O Plano de Serviço Pedal Leve oferece uma gama de assistências
+            O Plano de Serviço Pedal Leve oferece uma gama de assistências
             cruciais para ciclistas, cobrindo desde reparos básicos até garantir
             o bem-estar do ciclista. Isso inclui reparos ou substituições de
             câmaras de ar e correntes, ajustes ou trocas do selim e do canote, a
@@ -38,13 +46,19 @@ export default function MaisInfo() {
             dos freios dianteiro e traseiro. É um pacote abrangente que atende
             desde a manutenção rotineira até a assistência essencial em
             situações imprevistas.
-            
           </p>
           <h4 className=" text-xl md:text-2xl font-semibold mb-2 text-cyan-700">
             Pedal Elite:
           </h4>
-          <p className=" ">
-            
+          <p className="mb-4">
+            O plano de serviço Pedal Elite proporciona uma gama de assistências
+            vitais, desde reparos primordiais até benefícios que garantem a
+            comodidade e manutenção ideal do equipamento. Isso inclui reparos e
+            substituição de câmaras de ar e correntes, ajustes e trocas de selim
+            e canote, bem como a regulagem e substituição de manetes de freios e
+            cabos. No caso de emergências, o plano oferece o transporte do
+            segurado e da bicicleta, com limites de 50 km e 150 km, em situações
+            de quebra ou acidente, respectivamente.
           </p>
         </div>
 
@@ -68,8 +82,17 @@ export default function MaisInfo() {
           <h2 className="text-2xl md:text-3xl font-bold mb-4 text-cyan-900">
             Danos Cobertos
           </h2>
-          <div className="">
-            <p>Detalhes sobre os danos cobertos aqui.</p>
+          <div className="mb-4">
+            <p>
+              As condições gerais do seguro de bicicleta da Porto geralmente
+              abrangem coberturas como proteção contra colisão, tombamento, e
+              capotagem, além de roubo, danos por terceiros e danos por eventos
+              climáticos. Essa apólice costuma oferecer assistência 24 horas
+              para questões técnicas ou emergências. Contudo, é importante
+              revisar detalhadamente as condições específicas, uma vez que essas
+              coberturas podem variar em extensão e inclusão, dependendo do
+              plano escolhido.
+            </p>
           </div>
         </div>
       </div>

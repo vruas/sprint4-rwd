@@ -33,13 +33,13 @@ export default function Cadastro() {
 
     } catch (error) {
       console.log("ocorreu um erro no envio dos dados",error)
-      // window.location.href = "/cliente/cadastro" 
+    //   window.location.href = "/cadastro" 
     }
   };
 
   return (
     <div className="flex justify-center items-center h-screen bg-gray-200">
-      <form className="w-full max-w-md p-4 bg-white shadow-lg border-4 border-cyan-500 rounded-lg" onSubmit={handleCadastro}>
+      <form onSubmit={handleCadastro} className="w-full max-w-md p-4 bg-white shadow-lg border-4 border-cyan-500 rounded-lg" >
       <div className="flex justify-center p-0">
           <Image
             src="/img/porto-seguro-logo.png"
