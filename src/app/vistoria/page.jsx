@@ -1,12 +1,10 @@
 "use client";
 
-
 import Image from "next/image";
 import React from "react";
 import { useState } from "react";
 
 export default function Vistoria() {
-
   const [novaBicicleta, setNovaBicicleta] = useState({
     marca: "",
     tipo: "",
@@ -26,25 +24,28 @@ export default function Vistoria() {
     evt.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:8080", {
+      const response = await fetch("http://localhost:8080/porto/bicicleta", {
         method: "POST",
         body: JSON.stringify(novaBicicleta),
       });
 
       const resultado = await response.json();
-      console.log(resultado)
-      console.log(resposta.status)
+      console.log(resultado);
+      console.log(resposta.status);
       window.location.href = "/";
-
+      
     } catch (error) {
-      alert("Ocorreu um erro no cadastro da bicicleta: " + error.message);
+      console.log("Ocorreu um erro no cadastro da bicicleta: " + error.message);
       // Adicione tratamento adicional ou log do erro, se necessário
     }
   };
 
   return (
     <div className="flex justify-center items-center w-full h-screen bg-gray-200">
-      <form className="w-full max-w-md p-4 bg-white shadow-lg border-4 border-cyan-500 rounded-lg" onSubmit={handleCadastro}>
+      <form
+        className="w-full max-w-md p-4 bg-white shadow-lg border-4 border-cyan-500 rounded-lg"
+        onSubmit={handleCadastro}
+      >
         <div className="flex justify-center items-center mb-4">
           <Image
             src="/img/porto-seguro-logo.png"
@@ -54,14 +55,19 @@ export default function Vistoria() {
           />
         </div>
         <fieldset>
-          <legend className="form-legend text-xl font-bold mb-3 text-center">Informações da Bicicleta</legend>
-          <div className="grid grid-cols-2 gap-4">
+          <legend className="text-xl font-bold mb-3 text-center">
+            Informações da Bicicleta
+          </legend>
+          <div>
             <div className="mb-4">
-              <label className="form-label block text-sm font-bold mb-2" htmlFor="idMarca">
+              <label
+                className=" block text-sm font-bold mb-2"
+                htmlFor="idMarca"
+              >
                 Marca:
               </label>
               <input
-                className="form-input w-full border border-2 border-cyan-500 rounded-md py-2 px-3"
+                className=" w-full  border-2 border-cyan-500 rounded-md py-2 px-3"
                 type="text"
                 name="marca"
                 id="idMarca"
@@ -71,11 +77,11 @@ export default function Vistoria() {
               />
             </div>
             <div className="mb-4">
-              <label className="form-label block text-sm font-bold mb-2" htmlFor="idTipo">
+              <label className="block text-sm font-bold mb-2" htmlFor="idTipo">
                 Tipo:
               </label>
               <input
-                className="form-input w-full border border-2 border-cyan-500 rounded-md py-2 px-3"
+                className=" w-full  border-2 border-cyan-500 rounded-md py-2 px-3"
                 type="text"
                 name="tipo"
                 id="idTipo"
@@ -85,11 +91,14 @@ export default function Vistoria() {
               />
             </div>
             <div className="mb-4">
-              <label className="form-label block text-sm font-bold mb-2" htmlFor="idModelo">
+              <label
+                className=" block text-sm font-bold mb-2"
+                htmlFor="idModelo"
+              >
                 Modelo:
               </label>
               <input
-                className="form-input w-full border border-2 border-cyan-500 rounded-md py-2 px-3"
+                className=" w-full  border-2 border-cyan-500 rounded-md py-2 px-3"
                 type="text"
                 name="modelo"
                 id="idModelo"
@@ -99,11 +108,11 @@ export default function Vistoria() {
               />
             </div>
             <div className="mb-4">
-              <label className="form-label block text-sm font-bold mb-2" htmlFor="idPreco">
+              <label className="block text-sm font-bold mb-2" htmlFor="idPreco">
                 Preço:
               </label>
               <input
-                className="form-input w-full border border-2 border-cyan-500 rounded-md py-2 px-3"
+                className=" w-full border-2 border-cyan-500 rounded-md py-2 px-3"
                 type="text"
                 name="preco"
                 id="idPreco"
@@ -113,11 +122,14 @@ export default function Vistoria() {
               />
             </div>
             <div className="mb-4">
-              <label className="form-label block text-sm font-bold mb-2" htmlFor="idDataCompra">
+              <label
+                className=" block text-sm font-bold mb-2"
+                htmlFor="idDataCompra"
+              >
                 Data da Compra:
               </label>
               <input
-                className="form-input w-full border border-2 border-cyan-500 rounded-md py-2 px-3"
+                className=" w-full  border-2 border-cyan-500 rounded-md py-2 px-3"
                 type="date"
                 name="dataCompra"
                 id="idDataCompra"
@@ -127,17 +139,12 @@ export default function Vistoria() {
             </div>
           </div>
           <div className="text-center">
-            <button className="btn-login bg-cyan-500 text-white py-2 px-4 rounded-md hover:bg-cyan-700 transition-all duration-500 ease-out">
+            <button className=" bg-cyan-500 text-white py-2 px-4 rounded-md hover:bg-cyan-700 transition-all duration-500 ease-out">
               Cadastrar Bicicleta
             </button>
           </div>
         </fieldset>
       </form>
     </div>
-
-
-  
-  
-  
   );
 }
