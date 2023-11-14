@@ -58,7 +58,7 @@ export default function Vistoria() {
           <legend className="text-xl font-bold mb-3 text-center">
             Informações da Bicicleta
           </legend>
-          <div>
+          <div className="grid grid-cols-2 gap-4">
             <div className="mb-4">
               <label
                 className=" block text-sm font-bold mb-2"
