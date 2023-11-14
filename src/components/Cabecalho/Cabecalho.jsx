@@ -18,17 +18,17 @@ export default function Cabecalho() {
             </Link>
           </div>
 
-          <a href="/cliente/login">
-            <button className="btn-login-cabecalho">Entrar</button>
-          </a>
+          <Link href="/cadastro">
+            <button className="btn-login-cabecalho">Cadastre-se</button>
+          </Link>
         </div>
 
         <nav className="flex flex-row justify-around">
           <Link className="link-cabecalho" href="/vistoria">
             Vistoria
           </Link>
-          <Link className="link-cabecalho" href="/garagem">
-            Minha Garagem
+          <Link className="link-cabecalho" href="/bicicletas">
+            Bicicletas
           </Link>
           <Link className="link-cabecalho" href="/informacoes">
             Mais Informações
