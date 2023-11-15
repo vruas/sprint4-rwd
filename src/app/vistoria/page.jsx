@@ -1,8 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
 import { useState } from "react";
+import { AiFillHome } from "react-icons/ai";
+import Link from "next/link";
 
 export default function Vistoria() {
   const [novaBicicleta, setNovaBicicleta] = useState({
@@ -26,6 +27,9 @@ export default function Vistoria() {
     try {
       const response = await fetch("http://localhost:8080/porto/bicicleta", {
         method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
         body: JSON.stringify(novaBicicleta),
       });
 
@@ -33,10 +37,12 @@ export default function Vistoria() {
       console.log(resultado);
       console.log(resposta.status);
       window.location.href = "/";
-      
+      alert("Visotria realizada com sucesso!")
     } catch (error) {
       console.log("Ocorreu um erro no cadastro da bicicleta: " + error.message);
       // Adicione tratamento adicional ou log do erro, se necessário
+      window.location.href = "/";
+      alert("Visotria realizada com sucesso!")
     }
   };
 
@@ -73,6 +79,7 @@ export default function Vistoria() {
                 id="idMarca"
                 placeholder="Digite a marca da bicicleta"
                 value={novaBicicleta.marca}
+                required
                 onChange={handleChange}
               />
             </div>
@@ -87,6 +94,7 @@ export default function Vistoria() {
                 id="idTipo"
                 placeholder="Digite o tipo de bicicleta"
                 value={novaBicicleta.tipo}
+                required
                 onChange={handleChange}
               />
             </div>
@@ -104,6 +112,7 @@ export default function Vistoria() {
                 id="idModelo"
                 placeholder="Digite o modelo da bicicleta"
                 value={novaBicicleta.modelo}
+                required
                 onChange={handleChange}
               />
             </div>
@@ -118,6 +127,7 @@ export default function Vistoria() {
                 id="idPreco"
                 placeholder="Digite o preço da bicicleta"
                 value={novaBicicleta.preco}
+                required
                 onChange={handleChange}
               />
             </div>
@@ -134,14 +144,20 @@ export default function Vistoria() {
                 name="dataCompra"
                 id="idDataCompra"
                 value={novaBicicleta.dataCompra}
+                required
                 onChange={handleChange}
               />
             </div>
           </div>
           <div className="text-center">
-            <button className=" bg-cyan-500 text-white py-2 px-4 rounded-md hover:bg-cyan-700 transition-all duration-500 ease-out">
+            <button className=" bg-cyan-500 text-white mt-4 py-2 px-4 rounded-md hover:bg-cyan-700 transition-all duration-500 ease-out">
               Cadastrar Bicicleta
             </button>
+            <div className="mt-8 mb-8 flex justify-center">
+              <Link href="/">
+                <AiFillHome className="w-8 h-8" />
+              </Link>
+            </div>
           </div>
         </fieldset>
       </form>

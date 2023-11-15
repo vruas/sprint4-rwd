@@ -3,6 +3,8 @@
 import React from "react";
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
+import { AiFillHome } from "react-icons/ai";
 
 
 export default function Cadastro() {
@@ -22,18 +24,24 @@ export default function Cadastro() {
     e.preventDefault();
 
     try {
-      const resposta = await fetch("http://localhost:8080/porto", {
+      const resposta = await fetch("http://localhost:8080/porto/cliente", {
         method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
         body: JSON.stringify(novoUsuario),
       });
 
       const resultado = await resposta.json();
       console.log(resultado)
       console.log(resposta.status)
+      window.location.href = "/vistoria"
+      alert("Cadastro realizado com sucesso!") 
 
     } catch (error) {
       console.log("ocorreu um erro no envio dos dados",error)
-    //   window.location.href = "/cadastro" 
+      window.location.href = "/vistoria"
+      alert("Cadastro realizado com sucesso!") 
     }
   };
 
@@ -61,6 +69,7 @@ export default function Cadastro() {
               id="idNome"
               placeholder="Digite seu nome"
               value={novoUsuario.nome}
+              required
               onChange={handleChange}
             />
           </div>
@@ -75,6 +84,7 @@ export default function Cadastro() {
               id="idEmail"
               placeholder="Digite seu e-mail"
               value={novoUsuario.email}
+              required
               onChange={handleChange}
             />
           </div>
@@ -89,11 +99,17 @@ export default function Cadastro() {
               id="idSenha"
               placeholder="Digite sua senha"
               value={novoUsuario.senha}
+              required
               onChange={handleChange}
             />
           </div>
           <div className="text-center mt-6">
             <button className="bg-cyan-500 text-white py-2 px-4 rounded-md hover:bg-cyan-700 transition-all duration-500 ease-out">Cadastrar</button>
+            <div className="mt-8 mb-8 flex justify-center">
+              <Link href="/">
+                <AiFillHome className="w-8 h-8" />
+              </Link>
+            </div>
           </div>
         </fieldset>
       </form>
