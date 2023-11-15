@@ -40,8 +40,7 @@ export default function Cadastro() {
 
     } catch (error) {
       console.log("ocorreu um erro no envio dos dados",error)
-      window.location.href = "/vistoria"
-      alert("Cadastro realizado com sucesso!") 
+      window.location.href = "/cadastro"
     }
   };
 

@@ -37,12 +37,12 @@ export default function Vistoria() {
       console.log(resultado);
       console.log(resposta.status);
       window.location.href = "/";
-      alert("Visotria realizada com sucesso!")
+      alert("Bike cadastrada com sucesso!")
     } catch (error) {
       console.log("Ocorreu um erro no cadastro da bicicleta: " + error.message);
       // Adicione tratamento adicional ou log do erro, se necessário
-      window.location.href = "/";
-      alert("Visotria realizada com sucesso!")
+      window.location.href = "/vistoria";
+
     }
   };
 
