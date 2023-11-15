@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { AiFillHome } from "react-icons/ai";
 
 export default function Bicicletas() {
   return (
@@ -6,11 +7,11 @@ export default function Bicicletas() {
       <h1 className="text-3xl font-bold mb-4">
         Confira alguns exemplares de bikes e seus valores
       </h1>
-      <Link href="/">
-        <button className="bg-cyan-500 hover:bg-cyan-700 text-white font-bold py-2 px-4 rounded inline-block mb-4">
-          Voltar
-        </button>
-      </Link>
+      <div className="mt-8 mb-8 flex justify-start">
+        <Link href="/">
+          <AiFillHome className="w-8 h-8" />
+        </Link>
+      </div>
       <table className="min-w-full bg-white border">
         <thead>
           <tr>

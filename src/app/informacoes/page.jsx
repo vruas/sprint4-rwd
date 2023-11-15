@@ -1,14 +1,13 @@
 import React from "react";
 import Link from "next/link";
+import { AiFillHome } from "react-icons/ai";
 
 export default function MaisInfo() {
   return (
     <div className="bg-gradient-to-b from-blue-100 to-blue-300 p-4 md:p-8">
       <div className="mt-8 mb-8 flex justify-start">
         <Link href="/">
-          <button className="bg-cyan-500 text-white py-2 px-4 rounded-md hover:bg-cyan-700 transition-all duration-500 ease-out">
-            Voltar
-          </button>
+          <AiFillHome className="w-8 h-8" />
         </Link>
       </div>
       <div>
